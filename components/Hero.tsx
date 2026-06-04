@@ -44,7 +44,7 @@ export default function Hero() {
       </div>
 
       <div className="hero-decoration">
-        <Image src="/img/vector1.svg" className="vector vector-1" alt="" aria-hidden="true" width={950} height={600} />
+        <Image src="/img/vector1.svg" className="vector vector-1" alt="" aria-hidden="true" width={1250} height={1200} />
         <Image src="/img/vector2.svg" className="vector vector-2" alt="" aria-hidden="true" width={560} height={400} />
         <Image src="/img/vector3.svg" className="vector vector-3" alt="" aria-hidden="true" width={560} height={400} />
         <div className="polygon-center">
