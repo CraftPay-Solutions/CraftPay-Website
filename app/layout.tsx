@@ -32,6 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <html lang="pl">
       <head>
         <meta name="theme-color" content="#09C777" />
+        <meta name="google-site-verification" content="T5jnl1i3jErQjlKfkyQ9ZXm7OUvQ6ckLY42S228Sor4" />
       </head>
       <body>
       <Loader />
