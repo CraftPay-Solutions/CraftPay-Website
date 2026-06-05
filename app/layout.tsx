@@ -8,13 +8,19 @@ export const metadata: Metadata = {
   title: 'CraftPay - Nowoczesna Automatyzacja Sklepów Minecraft',
   description: 'Zbuduj własny sklep Minecraft w kilka minut. W pełni darmowy, bez ograniczeń i ukrytych opłat. Zacznij zarabiać na swoich serwerach już dziś.',
   metadataBase: new URL('https://craftpay.pl'),
-  openGraph: {
-    type: 'website',
-    title: 'CraftPay - Nowoczesna Automatyzacja Sklepów Minecraft',
-    description: 'Zbuduj własny sklep Minecraft w kilka minut. W pełni darmowy, bez ograniczeń i ukrytych opłat. Zacznij zarabiać na swoich serwerach już dziś.',
-    url: 'https://craftpay.pl',
-    siteName: 'CraftPay',
-  },
+    openGraph: {
+        type: 'website',
+        title: 'CraftPay - Nowoczesna Automatyzacja Sklepów Minecraft',
+        description: 'Zbuduj własny sklep Minecraft w kilka minut. W pełni darmowy, bez ograniczeń i ukrytych opłat. Zacznij zarabiać na swoich serwerach już dziś.',
+        url: 'https://craftpay.pl',
+        siteName: 'CraftPay',
+    },
+    twitter: {
+        card: 'summary',
+        title: 'CraftPay - Nowoczesna Automatyzacja Sklepów Minecraft',
+        description: 'Zbuduj własny sklep Minecraft w kilka minut...',
+        images: ['https://craftpay.pl/img/logo-thumb.png'],
+    },
   robots: {
     index: true,
     follow: true,
