@@ -152,7 +152,6 @@ export default function TemplatesPage() {
       <main className="tpls-root">
         <div className="tpls-container">
 
-          {/* header */}
           <div className="tpls-header">
             <div className="tpls-eyebrow">
               <span className="tpls-dot" />
@@ -164,11 +163,10 @@ export default function TemplatesPage() {
             </h1>
             <p className="tpls-subtitle">
               Każdy szablon możesz wypróbować za darmo przed zakupem.<br />
-              Jeden klik — sklep żyje w sieci.
+              Jeden klik - sklep żyje w sieci.
             </p>
           </div>
 
-          {/* siatka */}
           <div className="tpl-grid">
             {templates.map((t, i) => (
               <TemplateCard key={t.id} t={t} index={i} />
