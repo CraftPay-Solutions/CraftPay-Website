@@ -21,8 +21,14 @@ export default function Hero() {
         </p>
 
         <div className="hero-btns">
-          <Link href="#" className="hero-btn-primary">Stwórz swój pierwszy sklep</Link>
-          <Link href="#" className="hero-btn-secondary">Dowiedz się więcej</Link>
+          <Link href="https://app.craftpay.net" className="hero-btn-primary">Stwórz swój pierwszy sklep</Link>
+        <div className="hero-btn-hex">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <polygon className="hex-track" points="100,18 176,60 176,140 100,182 24,140 24,60"/>
+            <circle cx="100" cy="100" r="15" fill="white"/>
+          </svg>
+        </div>
+          <Link href="https://craftpay.net" className="hero-btn-secondary">Dowiedz się więcej</Link>
         </div>
 
         <div className="trusted-box">
@@ -44,16 +50,15 @@ export default function Hero() {
       </div>
 
       <div className="hero-decoration">
-        <Image src="/img/vector1.svg" className="vector vector-1" alt="" aria-hidden="true" width={1250} height={1200} />
-        <Image src="/img/vector2.svg" className="vector vector-2" alt="" aria-hidden="true" width={560} height={400} />
-        <Image src="/img/vector3.svg" className="vector vector-3" alt="" aria-hidden="true" width={560} height={400} />
+        <Image src="/img/vector1.svg" className="vector vector-1" alt="" aria-hidden="true" width={560} height={400} />
+        <Image src="/img/vector1.svg" className="vector vector-2" alt="" aria-hidden="true" width={560} height={400} />
         <div className="polygon-center">
-          <Image src="/img/polygon.svg" className="polygon" alt="" aria-hidden="true" width={400} height={400} />
-          <Image src="/img/render.webp" className="render" alt="Podgląd panelu itemshopu CraftPay" width={1231} height={1699} />
+          <Image src="/img/polygon.svg" className="polygon" alt="" aria-hidden="true" width={300} height={400} />
+          <Image src="/img/render.png" className="render" alt="Podgląd panelu itemshopu CraftPay" width={1231} height={1699} />
         </div>
-        <Image src="/img/vector-emerald1.svg" className="vector vector-emerald1" alt="" aria-hidden="true" width={72} height={72} />
-        <Image src="/img/vector-emerald2.svg" className="vector vector-emerald2" alt="" aria-hidden="true" width={72} height={72} />
-        <Image src="/img/vector-emerald3.svg" className="vector vector-emerald3" alt="" aria-hidden="true" width={72} height={72} />
+        <Image src="/img/flame.png" className="vector vector-flame1" alt="" aria-hidden="true" width={72} height={72} />
+        <Image src="/img/flame.png" className="vector vector-flame2" alt="" aria-hidden="true" width={72} height={72} />
+        <Image src="/img/flame.png" className="vector vector-flame3" alt="" aria-hidden="true" width={72} height={72} />
       </div>
     </div>
   );

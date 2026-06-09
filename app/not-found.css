@@ -10,8 +10,8 @@ html, body {
 }
 
 body {
-  background: #08090C;
-  font-family: 'Switzer', sans-serif;
+  background: #131313;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow: hidden;
   position: relative;
 }
@@ -65,7 +65,7 @@ body::before {
 .error-title {
   font-size: 72px;
   font-weight: 600;
-  color: #09C777;
+  color: #FF9500;
   letter-spacing: -2px;
   transform: translateY(-180px);
 }
@@ -81,7 +81,7 @@ body::before {
 .error-btn {
   margin-top: 10px;
   padding: 12px 22px;
-  background: #09C777;
+  background: #FF9500;
   color: #000;
   text-decoration: none;
   border-radius: 10px;
@@ -93,5 +93,5 @@ body::before {
 
 .error-btn:hover {
   transform: translateY(-180px) scale(1.05);
-  background: #00ff92;
+  background: #FF9500;
 }

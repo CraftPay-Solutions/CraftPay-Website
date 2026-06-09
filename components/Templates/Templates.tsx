@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
-import Navbar from '@/components/Navbar';
 import './templates.css';
 
 interface Template {
@@ -13,7 +12,6 @@ interface Template {
   demoHref: string;
   img: string;
   featured?: boolean;
-  tag?: string;
   features: string[];
 }
 
@@ -98,27 +96,31 @@ function TemplateCard({ t, index }: { t: Template; index: number }) {
     if (!card) return;
     const io = new IntersectionObserver(
       ([e]) => { if (e.isIntersecting) { card.classList.add('tpl-card--in'); io.disconnect(); } },
-      { threshold: 0.06 }
+      { threshold: 0.08 }
     );
-    card.style.transitionDelay = `${index * 0.08}s`;
+    card.style.transitionDelay = `${index * 0.12}s`;
     io.observe(card);
     return () => io.disconnect();
   }, [index]);
 
   return (
     <div className={`tpl-card${t.featured ? ' tpl-card--featured' : ''}`} ref={cardRef}>
+
       <div className="tpl-img-wrap">
-        <Image src={t.img} alt={t.name} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" />
+        <Image
+          src={t.img}
+          alt={t.name}
+          fill
+          style={{ objectFit: 'cover' }}
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
         <div className="tpl-img-overlay" />
-        {t.tag && (
-          <div className={`tpl-img-badge${t.tag === 'Pro' ? ' tpl-img-badge--pro' : ''}`}>
-            {t.tag}
-          </div>
-        )}
+        {t.featured && <div className="tpl-img-badge">Popularny</div>}
       </div>
 
       <div className="tpl-body">
         <h3 className="tpl-name">{t.name}</h3>
+
         <p className="tpl-features-label">Dostępne funkcje:</p>
         <ul className="tpl-features">
           {t.features.map((f) => (
@@ -131,7 +133,8 @@ function TemplateCard({ t, index }: { t: Template; index: number }) {
 
         <div className="tpl-footer">
           <div className="tpl-price">
-            <span className="tpl-price-num">{t.price === '0' ? 'Free' : `${t.price} PLN`}</span>
+            <span className="tpl-price-num">{t.price}</span>
+            <span className="tpl-price-unit">wPLN</span>
           </div>
           <Link href={t.demoHref} className={`tpl-demo-btn${t.featured ? ' tpl-demo-btn--featured' : ''}`} target="_blank" rel="noopener noreferrer">
             Zobacz demo
@@ -145,30 +148,23 @@ function TemplateCard({ t, index }: { t: Template; index: number }) {
   );
 }
 
-export default function TemplatesPage() {
+export default function Templates() {
   return (
     <>
-      <Navbar />
-      <main className="tpls-root">
-        <div className="tpls-container">
-
-          {/* header */}
-          <div className="tpls-header">
-            <div className="tpls-eyebrow">
-              <span className="tpls-dot" />
-              Szablony
+      <section className="tpl-section" id="templates">
+        <div className="tpl-container">
+          <div className="tpl-header">
+            <div className="tpl-header-left">
+              <h2 className="tpl-title">
+                Zobacz nasze <span className="tpl-accent">szablony </span>
+              </h2>
+              <p className="tpl-subtitle">Sprawdź nasze dostępne szablony.</p>
             </div>
-            <h1 className="tpls-title">
-              Wybierz swój<br />
-              <span className="tpls-accent">szablon sklepu</span>
-            </h1>
-            <p className="tpls-subtitle">
-              Każdy szablon możesz wypróbować za darmo przed zakupem.<br />
-              Jeden klik — sklep żyje w sieci.
-            </p>
+            <Link href="https://app.craftpay.pl" className="tpl-all-btn">
+              Zobacz wszystkie
+            </Link>
           </div>
 
-          {/* siatka */}
           <div className="tpl-grid">
             {templates.map((t, i) => (
               <TemplateCard key={t.id} t={t} index={i} />
@@ -176,7 +172,7 @@ export default function TemplatesPage() {
           </div>
 
         </div>
-      </main>
+      </section>
     </>
   );
 }

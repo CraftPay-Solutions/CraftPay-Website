@@ -1,25 +1,26 @@
+import Features from '@/components/Features/Features';
 import Hero from '@/components/Hero';
-import PaymentsSection from '@/components/PaymentsSection';
-import StepsSection from '@/components/StepsSection';
-import PricingSection from '@/components/PricingSection';
-import TemplatesSection from '@/components/TemplatesSection';
-import BenefitsSection from '@/components/BenefitsSection';
-import FaqSection from '@/components/FaqSection';
-import Footer from '@/components/Footer';
 import Navbar from "@/components/Navbar";
+import Payments from '@/components/Payments/Payments';
+import Pricing from '@/components/Pricing/Pricing';
+import Steps from '@/components/Steps/Steps';
+import Templates from '@/components/Templates/Templates';
+import FAQ from '@/components/Faq/FAQ';
+import Footer from '@/components/Footer/Footer';
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-      <PaymentsSection />
-      <StepsSection />
-      <PricingSection />
-      <TemplatesSection />
-      <BenefitsSection />
-      <FaqSection />
+      <Steps />
+      <Payments />
+      <Pricing />
+      <Features />
+      <Templates />
+      <FAQ />
       <Footer />
     </>
   );
 }
+
