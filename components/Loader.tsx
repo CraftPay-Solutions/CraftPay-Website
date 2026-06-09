@@ -15,8 +15,10 @@ export default function Loader() {
         loader.style.display = 'none';
         document.body.style.overflow = 'auto';
         if (app) app.style.opacity = '1';
-        if (typeof window !== 'undefined' && window.ScrollTrigger) {
-          window.ScrollTrigger.refresh();
+        
+        const win = window as any;
+        if (typeof window !== 'undefined' && win.ScrollTrigger) {
+          win.ScrollTrigger.refresh();
         }
       }, 400);
     }, 600);
