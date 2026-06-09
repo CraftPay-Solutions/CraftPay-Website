@@ -16,7 +16,9 @@ export default function Loader() {
         document.body.style.overflow = 'auto';
         if (app) app.style.opacity = '1';
         
+        // Definiujemy win jako any
         const win = window as any;
+        // TUTAJ: Używamy 'win', a nie 'window'
         if (typeof window !== 'undefined' && win.ScrollTrigger) {
           win.ScrollTrigger.refresh();
         }
