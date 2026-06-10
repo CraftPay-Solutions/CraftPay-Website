@@ -147,9 +147,7 @@
     transition: color 0.2s ease;
 }
 
-.faq-card:hover .faq-question-text {
-    color: #ffffff;
-}
+.faq-card:hover .faq-question-text { color: #ffffff; }
 
 .faq-card--open .faq-question-text {
     color: var(--accent-bright);
@@ -179,9 +177,7 @@
     background: rgba(255, 255, 255, 0.06);
 }
 
-.faq-card:hover .faq-chevron {
-    color: rgba(255, 255, 255, 0.8);
-}
+.faq-card:hover .faq-chevron { color: rgba(255, 255, 255, 0.8); }
 
 .faq-card--open .faq-chevron-wrap {
     background: rgba(255, 149, 0, 0.1);
@@ -231,41 +227,46 @@
     transition: opacity 0.3s ease;
 }
 
-.faq-card--open .faq-card-glow {
-    opacity: 1;
-}
+.faq-card--open .faq-card-glow { opacity: 1; }
 
 @keyframes faqDotPulse {
-    0%, 100% {
-        opacity: 1;
-        transform: scale(1);
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+@media (max-width: 1536px) {
+    .faq-container {
+        padding: 0 100px;
+        grid-template-columns: 340px 1fr;
+        gap: 50px;
     }
-    50% {
-        opacity: 0.5;
-        transform: scale(0.8);
+    .faq-title { font-size: 36px; }
+}
+
+@media (max-width: 1440px) {
+    .faq-container {
+        padding: 0 80px;
+        grid-template-columns: 320px 1fr;
+        gap: 40px;
     }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1280px) {
     .faq-container {
-        padding: 0 100px;
-        grid-template-columns: 360px 1fr;
-        gap: 40px;
+        padding: 0 60px;
+        grid-template-columns: 300px 1fr;
+        gap: 32px;
     }
-    .faq-title {
-        font-size: 36px;
-    }
+    .faq-title { font-size: 32px; }
 }
 
 @media (max-width: 1200px) {
     .faq-container {
         padding: 0 40px;
-        grid-template-columns: 320px 1fr;
+        grid-template-columns: 280px 1fr;
         gap: 30px;
     }
-    .faq-title {
-        font-size: 32px;
-    }
+    .faq-title { font-size: 30px; }
 }
 
 @media (max-width: 1024px) {
@@ -284,25 +285,15 @@
 }
 
 @media (max-width: 768px) {
-    .faq-section {
-        padding: 80px 0 60px;
-    }
-    .faq-container {
-        padding: 0 20px;
-    }
-    .faq-title {
-        font-size: 28px;
-    }
+    .faq-section { padding: 80px 0 60px; }
+    .faq-container { padding: 0 20px; }
+    .faq-title { font-size: 28px; }
     .faq-btn {
         width: 100%;
         text-align: center;
     }
-    .faq-question-btn {
-        padding: 18px 20px;
-    }
-    .faq-question-text {
-        font-size: 15px;
-    }
+    .faq-question-btn { padding: 18px 20px; }
+    .faq-question-text { font-size: 15px; }
     .faq-answer-text {
         padding: 0 20px 20px;
         font-size: 13.5px;

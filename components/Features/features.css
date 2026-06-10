@@ -162,9 +162,7 @@
     height: 100%;
 }
 
-.ft-hex-bg {
-    stroke-width: 2;
-}
+.ft-hex-bg { stroke-width: 2; }
 
 .ft-hex-spin {
     fill: none;
@@ -207,19 +205,34 @@
 }
 
 @keyframes ftHexSpin {
-    to {
-        stroke-dashoffset: -300;
+    to { stroke-dashoffset: -300; }
+}
+
+@media (max-width: 1536px) {
+    .ft-container {
+        padding: 0 100px;
+        grid-template-columns: 340px 1fr;
+        gap: 60px;
+    }
+    .ft-title { font-size: 36px; }
+}
+
+@media (max-width: 1440px) {
+    .ft-container {
+        padding: 0 80px;
+        grid-template-columns: 320px 1fr;
+        gap: 56px;
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1280px) {
     .ft-container {
         padding: 0 60px;
-        gap: 60px;
+        grid-template-columns: 300px 1fr;
+        gap: 48px;
     }
-    .ft-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    .ft-title { font-size: 32px; }
+    .ft-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 1100px) {
@@ -236,21 +249,13 @@
         align-items: center;
         text-align: center;
     }
-    .ft-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    .ft-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 768px) {
-    .ft-section {
-        padding: 80px 0 60px;
-    }
-    .ft-container {
-        padding: 0 20px;
-    }
-    .ft-title {
-        font-size: 30px;
-    }
+    .ft-section { padding: 80px 0 60px; }
+    .ft-container { padding: 0 20px; }
+    .ft-title { font-size: 30px; }
     .ft-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -259,7 +264,6 @@
         width: 100%;
         text-align: center;
     }
-    
     .ft-card {
         display: flex;
         flex-direction: column;
@@ -270,13 +274,9 @@
         flex-direction: column;
         gap: 12px;
     }
-    .ft-tag {
-        align-self: center;
-    }
+    .ft-tag { align-self: center; }
 }
 
 @media (max-width: 480px) {
-    .ft-grid {
-        grid-template-columns: 1fr;
-    }
+    .ft-grid { grid-template-columns: 1fr; }
 }

@@ -652,6 +652,69 @@ body::before {
     html { scroll-behavior: smooth; }
 }
 
+@media (max-width: 1728px) {
+    .navbar-inner {
+        padding: 40px 120px;
+    }
+
+    .container {
+        padding: 0 120px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .navbar-inner {
+        padding: 32px 80px;
+    }
+
+    .container {
+        padding: 0 80px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .render {
+        width: 480px;
+        height: 620px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .navbar-inner {
+        padding: 28px 48px;
+    }
+
+    .container {
+        padding: 0 48px;
+    }
+
+    .hero {
+        grid-column: 1 / 9;
+        padding-top: 90px;
+    }
+
+    .hero-decoration {
+        grid-column: 9 / 13;
+        margin-top: 120px;
+    }
+
+    .hero-title {
+        font-size: 44px;
+    }
+
+    .render {
+        width: 420px;
+        height: 540px;
+    }
+
+    .vector-1 { width: 520px; right: -100px; top: -160px; }
+    .vector-2 { width: 530px; right: 160px; top: 120px; }
+    .vector-flame1 { right: 420px; }
+    .vector-flame2 { right: -20px; }
+}
+
 @media (max-width: 1200px) {
     .navbar-inner {
         padding: 24px 40px;
@@ -794,7 +857,7 @@ body::before {
         margin: 15px auto 0;
         text-align: center;
     }
-    
+
     .trusted-avatars {
         justify-content: center;
     }
@@ -846,23 +909,23 @@ body::before {
 }
 
 :focus-visible {
-  outline: 2px solid #FF9500;
-  outline-offset: 2px;
+    outline: 2px solid #FF9500;
+    outline-offset: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 @supports (scroll-behavior: smooth) {
-  html {
-    scroll-behavior: smooth;
-  }
+    html {
+        scroll-behavior: smooth;
+    }
 }

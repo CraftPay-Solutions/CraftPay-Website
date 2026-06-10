@@ -148,10 +148,7 @@
     margin-bottom: 28px;
 }
 
-.pc-hex {
-    flex-shrink: 0;
-    margin-top: 2px;
-}
+.pc-hex { flex-shrink: 0; margin-top: 2px; }
 
 .pc-plan-name {
     font-size: 22px;
@@ -271,9 +268,7 @@
     font-weight: 300;
 }
 
-.pc-feature svg {
-    flex-shrink: 0;
-}
+.pc-feature svg { flex-shrink: 0; }
 
 .pc-glow {
     position: absolute;
@@ -286,25 +281,32 @@
     pointer-events: none;
 }
 
+@media (max-width: 1536px) {
+    .pc-container { padding: 0 100px; }
+    .pc-title { font-size: 54px; }
+}
+
+@media (max-width: 1440px) {
+    .pc-container { padding: 0 80px; }
+    .pc-title { font-size: 52px; }
+}
+
+@media (max-width: 1280px) {
+    .pc-container { padding: 0 60px; }
+    .pc-title { font-size: 46px; }
+    .pc-grid { max-width: 100%; }
+    .pc-price { font-size: 48px; }
+}
+
 @media (max-width: 1200px) {
-    .pc-container {
-        padding: 0 40px;
-    }
-    .pc-title {
-        font-size: 48px;
-    }
-    .pc-grid {
-        max-width: 100%;
-    }
+    .pc-container { padding: 0 40px; }
+    .pc-title { font-size: 44px; }
+    .pc-grid { max-width: 100%; }
 }
 
 @media (max-width: 768px) {
-    .pc-section {
-        padding: 80px 0 60px;
-    }
-    .pc-container {
-        padding: 0 20px;
-    }
+    .pc-section { padding: 80px 0 60px; }
+    .pc-container { padding: 0 20px; }
     .pc-title {
         font-size: 34px;
         letter-spacing: -1px;

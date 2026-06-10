@@ -1,6 +1,4 @@
-.ftr-outer {
-    width: 100%;
-}
+.ftr-outer { width: 100%; }
 
 .ftr-container {
     max-width: 1920px;
@@ -22,9 +20,7 @@
     letter-spacing: -0.3px;
 }
 
-.ftr-logo-text strong {
-    font-weight: 700;
-}
+.ftr-logo-text strong { font-weight: 700; }
 
 .ftr-cta-box {
     display: flex;
@@ -133,9 +129,7 @@
     transition: color 0.2s;
 }
 
-.ftr-btn-ghost:hover {
-    color: var(--text);
-}
+.ftr-btn-ghost:hover { color: var(--text); }
 
 .ftr-cta-right {
     display: flex;
@@ -213,9 +207,7 @@
     transition: opacity 0.2s;
 }
 
-.ftr-brand-cta:hover {
-    opacity: 0.7;
-}
+.ftr-brand-cta:hover { opacity: 0.7; }
 
 .ftr-socials {
     display: flex;
@@ -223,9 +215,7 @@
     margin-top: 4px;
 }
 
-.ftr-hex-link {
-    text-decoration: none;
-}
+.ftr-hex-link { text-decoration: none; }
 
 .ftr-hex-wrap {
     position: relative;
@@ -282,14 +272,8 @@
     justify-content: center;
 }
 
-.ftr-hex-link:hover .ftr-hex-icon {
-    opacity: 1;
-}
-
 @keyframes ftrHexSpin {
-    to {
-        stroke-dashoffset: -300;
-    }
+    to { stroke-dashoffset: -300; }
 }
 
 .ftr-col {
@@ -322,9 +306,7 @@
     transition: color 0.2s;
 }
 
-.ftr-link:hover {
-    color: var(--text);
-}
+.ftr-link:hover { color: var(--text); }
 
 .ftr-bar {
     display: flex;
@@ -356,26 +338,29 @@
     transition: opacity 0.2s;
 }
 
-.ftr-link-sm:hover {
-    opacity: 1;
+.ftr-link-sm:hover { opacity: 1; }
+
+@media (max-width: 1536px) {
+    .ftr-container { padding: 0 100px; }
+    .ftr-top { gap: 48px; }
 }
 
-@media (max-width: 1400px) {
-    .ftr-container {
-        padding: 0 60px;
-    }
-    .ftr-cta-box {
-        padding: 48px;
-    }
-    .ftr-cta-title {
-        font-size: 34px;
-    }
+@media (max-width: 1440px) {
+    .ftr-container { padding: 0 80px; }
+    .ftr-cta-box { padding: 48px; }
+    .ftr-cta-title { font-size: 36px; }
+    .ftr-top { gap: 40px; }
+}
+
+/* ── MacBook Air 13" / 1280px ── */
+@media (max-width: 1280px) {
+    .ftr-container { padding: 0 60px; }
+    .ftr-cta-title { font-size: 32px; }
+    .ftr-top { gap: 32px; }
 }
 
 @media (max-width: 1100px) {
-    .ftr-container {
-        padding: 0 40px;
-    }
+    .ftr-container { padding: 0 40px; }
     .ftr-cta-box {
         flex-direction: column;
         align-items: flex-start;
@@ -388,16 +373,12 @@
         grid-template-columns: 1fr 1fr;
         gap: 40px;
     }
-    .ftr-brand {
-        grid-column: 1 / -1;
-    }
+    .ftr-brand { grid-column: 1 / -1; }
 }
 
 @media (max-width: 768px) {
-    .ftr-container {
-        padding: 0 20px;
-    }
-    
+    .ftr-container { padding: 0 20px; }
+
     .ftr-cta-box {
         padding: 32px 24px;
         border-radius: 16px;
@@ -405,61 +386,45 @@
         align-items: center;
         text-align: center;
     }
-    
-    .ftr-cta-left {
-        align-items: center;
-    }
-    
-    .ftr-cta-title {
-        font-size: 28px;
-    }
-    
+
+    .ftr-cta-left { align-items: center; }
+    .ftr-cta-title { font-size: 28px; }
+
     .ftr-cta-actions {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-    
+
     .ftr-btn-primary {
         width: 100%;
         text-align: center;
     }
-    
+
     .ftr-cta-right {
         width: 100%;
         justify-content: center;
         gap: 24px;
     }
-    
+
     .ftr-top {
         grid-template-columns: 1fr;
         gap: 32px;
         text-align: center;
     }
-    
-    .ftr-brand {
-        align-items: center;
-    }
-    
-    .ftr-logo {
-        justify-content: center;
-    }
-    
-    .ftr-socials {
-        justify-content: center;
-    }
-    
-    .ftr-stat-divider {
-        display: none;
-    }
-    
+
+    .ftr-brand { align-items: center; }
+    .ftr-logo { justify-content: center; }
+    .ftr-socials { justify-content: center; }
+    .ftr-stat-divider { display: none; }
+
     .ftr-bar {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 16px;
     }
-    
+
     .ftr-bar-links {
         justify-content: center;
         flex-wrap: wrap;
