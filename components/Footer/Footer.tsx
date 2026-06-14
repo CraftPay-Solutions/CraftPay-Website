@@ -10,8 +10,8 @@ const links = {
   ],
   Wsparcie: [
     { label: 'Dokumentacja', href: 'https://docs.craftpay.pl' },
-    { label: 'Centrum pomocy', href: '/help' },
-    { label: 'Status', href: '/status' },
+    { label: 'Serwer Wsparcia', href: 'https://discord.gg/craftpay' },
+    { label: 'Wiki', href: 'https://wiki.craftpat.pl' },
   ],
 };
 
@@ -87,8 +87,8 @@ export default function Footer() {
             <div className="ftr-bar">
               <span className="ftr-copy">© {new Date().getFullYear()} CraftPay Solutions.</span>
               <div className="ftr-bar-links">
-                <Link href="/terms" className="ftr-link-sm">Regulamin</Link>
-                <Link href="/privacy" className="ftr-link-sm">Prywatność</Link>
+                <Link href="/regulamin" className="ftr-link-sm">Regulamin</Link>
+                <Link href="/polityka" className="ftr-link-sm">Prywatność</Link>
               </div>
             </div>
           </footer>
