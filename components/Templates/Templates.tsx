@@ -39,7 +39,7 @@ const templates: Template[] = [
     name: 'Test1',
     price: '0',
     demoHref: 'https://app.craftpay.pl',
-    img: '/img/templates/test.png',
+    img: 'https://imgur.com/fYLFSpp.png',
     features: [
       'TEST',
       'TEST',
