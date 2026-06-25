@@ -227,18 +227,15 @@
   transform: translateY(-1px);
 }
 
-/* ── MacBook Pro 16" / 1536px ── */
 @media (max-width: 1536px) {
   .tpls-container { padding: 0 100px; }
   .tpls-title { font-size: 48px; }
 }
 
-/* ── MacBook Air/Pro 13"–14" / 1440px ── */
 @media (max-width: 1440px) {
   .tpls-container { padding: 0 80px; }
 }
 
-/* ── MacBook Air 13" / 1280px ── */
 @media (max-width: 1280px) {
   .tpls-container { padding: 0 60px; }
   .tpls-title { font-size: 42px; }
